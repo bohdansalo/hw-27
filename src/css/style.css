@@ -1,0 +1,48 @@
+:root {
+  --font-family: "Teko", sans-serif;
+}
+body {
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  font-weight: 700px;
+  font-size: 20px;
+}
+body:hover .container {
+  transform: translatex(0);
+}
+body:hover .menu-title {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+.container {
+  position: absolute;
+  background-color: gray;
+  padding-bottom: 31%;
+  width: 400px;
+  left: 0;
+  top: 0;
+  transform: translateX(-87%);
+  transition-duration: 300ms;
+}
+.menu-item {
+  text-decoration: none;
+}
+.menu-list {
+  font-weight: 700px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-title {
+  position: absolute;
+  top: 300px;
+  right: -60px;
+  transform: rotate(90deg);
+}
+.menu-link {
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: orangered;
+  transition-duration: 250ms;
+}
